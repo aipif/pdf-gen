@@ -152,17 +152,12 @@ h1 {
     line-height: 1.6;
 }
 
-#pdf-container {
-    position: fixed;          /* Removes from document flow completely */
-    left: -9999px;
-    top: 0;
-    width: 2480px;
-    height: 3508px;
-    visibility: hidden;       /* Makes it invisible */
-    pointer-events: none;     /* Prevents any interaction */
-    z-index: -1;              /* Sends it behind everything */
-    overflow: hidden;         /* Contains content */
-}
+        #pdf-container {
+            position: absolute;
+            left: -9999px;
+            width: 2480px;
+            height: 3508px;
+        }
 
 .note strong {
     font-weight: 700;
